@@ -1,0 +1,77 @@
+* {
+	margin: 0;
+	padding: 0;
+	transition: all .1s ease-in;
+}
+html,body {height:100%;}
+body {
+	color: #fff;
+	font:16px/1.2 “Tebuchet MC”, Tebuchet, Arial, sans-serif;
+	background-color: #3b3f45;
+}
+.wrapper {
+	border:24px solid #fff;
+	min-height:100%;
+	box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+}
+.header,
+.footer {
+	background-color: #4a4f56;
+	color:#eb7e7f;
+	text-align: center;
+	padding:21px 20px;
+	font-size: 24px;
+}
+.header {margin-bottom: 40px;}
+.footer {font-size: 26px;}
+.container {
+	width:800px;
+	margin:0 auto;
+}
+h1 {
+	font-size: 35px;
+	margin-bottom: 5px;
+	letter-spacing:1px;
+}
+.shopping-list {
+	list-style: none;
+	margin-bottom: 40px;
+}
+.shopping-list li {
+	background-color: #88839e;
+}
+.shopping-list li:nth-child(even) {background-color: #7a7593;}
+.shopping-list label {
+	display: block;
+	padding:13px 15px;
+	border:solid transparent;
+	border-width:3px 0;
+	cursor: pointer;
+}
+.shopping-list label:hover {
+	background-color: #625e77;
+	border-color:#fff;
+}
+.shopping-list label:active {background-color: #eb7e7f;}
+.shopping-list input[type="checkbox"] {
+	width:26px;
+	height:26px;
+	display: inline-block;
+	vertical-align: middle;
+	margin:-2px 12px 0 0;
+}
+.shopping-list input[type="checkbox"]:checked ~ * {text-decoration: line-through;}
+.shopping-list .item-name {
+	font-size: 26px;
+	display: inline-block;
+	vertical-align: middle;
+}
+.shopping-list .small {
+	color:#c0cbd6;
+	display: inline-block;
+	vertical-align: middle;
+	
+}
+.shopping-list .small:before {content:"( ";}
+.shopping-list .small:after {content:" )"}
